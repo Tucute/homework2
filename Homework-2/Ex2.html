@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ex2</title>
+    <script>
+        var no=0;
+        function functionOK() {
+            no++;
+            var fname = frm.fname.value;
+            var lname = frm.lname.value;
+            var score = frm.score.value;
+            var result;
+            var mention;
+            if (score>=50) {
+                result = "Pass";
+            }
+            if (score>=90) {
+                mention= "Very Good";
+            }
+            else if (score>=80) {
+                mention= "Good";
+            }
+            else {
+                mention= "Fair";
+            }
+            var row = "<tr>";
+            row += "<td>" + no + "</td>";
+            row += "<td>" + fname + "</td>";  
+            row += "<td>" + lname + "</td>";  
+            row += "<td>" + result + "</td>";  
+            row += "<td>" + mention + "</td>";  
+            document.getElementById("tb").innerHTML += row;     
+        }
+    </script>
+    <style>
+        form {
+            margin: 10px;
+            padding: 10px;
+        }
+        button {
+            background-color: blueviolet;
+            
+        }
+        table {
+            width: 600px;
+            border: 1px solid #bbb;
+        }
+        #tb tr {
+            height: 27px;
+
+        }
+        #tb tr th,  #tb tr td {
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+        #tb tr:last-child td {
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>New Product</h1>
+    <hr>
+    <form name="frm">
+        <p>
+            <label>
+                First Name
+                <input type="text" name="fname" id="fname"/>
+            </label>
+        </p>
+        <p>
+            <label>
+                Last Name
+                <input type="text" name="lname" id="lname">
+            </label>
+        </p>
+        <p>
+            <label>
+                Score
+                <input type="text" name="score" id="score">
+            </label>
+        </p>
+        <p>
+            <button type="button" onclick="functionOK()">OK</button>
+        </p>
+    </form>
+    <table id="tb">
+        <tr>
+            <th>No</th>
+            <th>Full Name</th>
+            <th>Score</th>
+            <th>Result</th>
+            <th>Mention</th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    <!-- Latest compiled and minified CSS & JS -->
+    
+    <link rel="stylesheet" href="style-ex3.css">
+    <script src="function-ex3.js"></script>
+</head>
+<body>
+    <label>Fullname_Customer</label>
+    <input type="text" name="cus" id="cus">
+    <br>
+    <br>
+    <label>Id_Pro</label>
+    <input type="text" name="idpr" id="idpr">
+    <br>
+    <br>
+    <label>Name_Pro</label>
+    <input type="text" name="namepr" id="namepr">
+    <br>
+    <br>
+    <label>Quantity_Pro</label>
+    <input type="text" name="qtypr" id="qtypr">
+    <br>
+    <br>
+    <label>Price_Pro</label>
+    <input type="text" name="price" id="price">
+    <br>
+    <br>
+    <button type="button" onclick="save()">Save</button>
+    <button type="button" onclick="show()">Show</button>
+    <button type="button" onclick="reset()">Reset</button>
+    <br>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Auto_Increment</th>
+                <th>Fullname_Customer</th>
+                <th>Id_Pro</th>
+                <th>Name_Pro</th>
+                <th>Quantity_Pro</th>
+                <th>Price_Pro</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="tbl"></tbody>
+    </table>
+</body>
+</html>

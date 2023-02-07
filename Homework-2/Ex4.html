@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>User Login</h1>
+    <label>Username</label>
+    <br>
+    <input type="text" size="32" id="uname">
+    <br>
+    <label>Password</label>
+    <br>
+    <input type="text" size="32" id="password">
+    <br>
+    <button type="button" onclick="Login()">Login</button>
+    <button type="button" onclick="Cancle()">Cancle</button>
+    <br>
+    <p id="Error"></p>
+
+    <script>
+        var arr=[
+        {
+            id: 1,
+            username: "tu",
+            password: "tinhtu"
+        },
+        {
+            id: 2,
+            username: "thang",
+            password: "thangthua"
+        }
+        ]
+        var name=document.getElementById("uname").value;
+        var pass=document.getElementById("password").value;
+        
+        function Login() {
+            var Error='';
+            for (i in arr) {
+                if ((name == arr[i].username) && (pass == arr[i].password)) {
+                    location.href="https://www.google.com/?hl=vi" 
+                } 
+                document.getElementById("Error").innerHTML=Error;
+            }
+        }
+        function Cancle() {
+            document.getElementById("uname").value='';
+            document.getElementById("password").value='';
+            document.getElementById("uname").focus();
+        }
+    </script>
+</body>
+</html> 

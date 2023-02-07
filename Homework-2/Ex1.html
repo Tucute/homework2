@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+    <style>
+        .container {
+            margin-bottom: 5px;
+            border: 2px solid olivedrab;
+            width: 700px;
+        }
+        .form {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        table {
+            padding: 5px;
+            width: 600px;
+            border: 1px solid black;
+            border-spacing: 0;
+        }
+    </style>
+    <script>
+        var id=0;
+        function functionSell() {
+            id++;
+            var n = document.getElementById("name").value;
+            var q = document.getElementById("quantity").value;
+            var u = document.getElementById("price").value;
+            var d = document.getElementById("sell").value;
+            var sub =((u-((u*d)/100))*q) ;
+            var row = "<tr>" ;
+            row += "<td>"+id+"<td>";
+            row += "<td>"+n+"<td>";
+            row += "<td>"+q+"<td>";
+            row += "<td> $"+u+"<td>";
+            row += "<td>"+d+"<td>";
+            row += "<td> $"+sub+"<td>"; 
+            row += "</tr>";    
+            document.getElementById("tb").innerHTML = row;      
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>New Product</h2>
+            <hr>
+            <div>
+                Product Name: <input type="text" name="P-name" id="name">
+                Quantity: <input type="number" name="Quantity" id="quantity">
+            </div>
+            <br>
+            <div>
+                Unit Price: <input type="number" name="Price" id="price">
+                Discount: <input type="number" name="sale" id="sale">
+            </div>
+            <br>
+            <button type="button" onclick="functionSell()">Sell</button>
+            <button type="button">Cancle</button>
+            <br>
+            <br>
+            <table id="tb"> 
+                <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Discount</th>
+                    <th>Subtotal</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

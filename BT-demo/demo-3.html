@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day</title>
+</head>
+<body>
+    <script language="javascript">
+        var birthday=new Date(prompt("Nhập ngày tháng năm sinh theo định dạng 'MM/dd/YYYY':"));
+        
+        var day=birthday.getDay();
+        var day_name="";
+        switch (day) {
+            case 0: day_name = "Sunday"; break;
+            case 1: day_name = "Monday"; break;
+            case 3: day_name = "Tuesday"; break;
+            case 4: day_name = "Wednesday"; break;
+            case 5: day_name = "Thursday"; break;
+            case 6: day_name = "Friday"; break;
+            case 7: day_name = "Sartuday"; break;
+        };
+        alert("Day is" + day_name );
+        var current_day=new Date();
+        var curYear = current_day.getFullYear();
+
+        var year=birthday.getFullYear();
+
+        alert("You are" + (curYear-year) + "old.");
+    </script>
+</body>
+</html>

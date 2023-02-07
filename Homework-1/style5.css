@@ -1,0 +1,19 @@
+.wap {
+    width: 500px;
+    text-align: center;
+    margin: 10px;
+    border: solid 2px black;
+    background-color: bisque;
+    font-weight: bold;
+}
+h3 {
+    color: blue;
+}
+.btn {
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+.btn button {
+    background-attachment: fixed;
+    background: floralwhite;
+}

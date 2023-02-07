@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-4</title>
+    <script src="function.js"></script>
+    <style>
+        .wap {
+            width: 500px;
+            text-align: center;
+            margin: 10px;
+            border: solid 2px black;
+            background-color: bisque;
+            font-weight: bold;
+        }
+        h3 {
+            color: blue;
+        }
+        .btn {
+            margin-left: 160px;
+            margin-bottom: 10px;
+        }
+        .btn button {
+            background-attachment: fixed;
+            background: floralwhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="wap">
+        <h3>Bảng điểm của em</h3>
+        <div>
+            Semester 1: <input type="text" name="#" id="sm1">
+        </div>
+        <br>
+        <div>
+            Semester 2: <input type="text" name="#" id="sm2">
+        </div>
+        <br>
+        <div>
+            Year: <select id="year">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+        </div>
+        <br>
+        Summary: <input type="text" id="kq">
+        <br>
+        <br>
+        <div class="btn">
+            <button onclick="FunctionOK()">OK</button>
+            <button onClick="FunctionCancle()">Cancle</button>
+        </div>
+    </div>
+</body>
+</html>

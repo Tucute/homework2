@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo-5</title>
+</head>
+<body> 
+    <p>A function is triggered when the user releases a key in the input field. The function outputs the actual key/letter that 
+        was released inside the text field.</p>
+    Enter your first name: <input type="text" id="fname" onkeyup="myFunction()">
+    <p>Enter your last name: <input type="text" id="lname" onkeyup="myFunction()"></p>
+    <p>My name is: <span id="demo"></span></p>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("fname").value;
+        var y = document.getElementById("lname").value;
+        document.getElementById("demo").innerHTML= y + " " + x;
+        }
+    </script>   
+</body>
+</html>

@@ -1,0 +1,30 @@
+#showProductsBC {
+    justify-content: center;
+    margin-top: 20px;
+}
+.card-body  {
+    text-align: center;
+    cursor: pointer;
+}
+.card-body:hover .card-title{
+    color: #ffa500;
+} 
+.card-body:hover .card-text {
+    color: #ffa500;
+}
+#showProductsNB {
+    justify-content: center;
+    margin-top: 20px;
+}
+h1 {
+    margin-bottom: 10px;
+}
+.col-2 {
+    margin-top: 10px;
+}
+.card-title {
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}

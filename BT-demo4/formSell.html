@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sell</title>
+    <script src="sell.js"></script>
+    <style>
+        #tb {
+            border: 1px solid black;
+            width: 600px;
+            border-spacing: 0;
+        }
+        #tb tr:last-child td {
+            border: none;
+        }
+        #tb tr th, #tb tr td {
+            text-align: left;
+            border-bottom: 1px solid black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>New Product</h1>
+    <hr>
+    <form name="frm">
+        <p>
+            <label>
+                Product Name
+                <input type="text" name="pname" id="pname">
+            </label>
+            <label>
+                Quantity
+                <input type="text" name="quantity" id="quantity">
+            </label>
+        </p>
+        <p>
+            <label>
+                Unit price
+                <input type="text" name="uprice" id="uprice">
+            </label>
+            <label>
+                Discount
+                <input type="text" name="discount" id="discount">
+            </label>
+        </p>
+        <p>
+            <label>
+                <button type="button" onclick="sell()">Sell</button>
+                <button>Cancle</button>
+            </label>
+        </p>
+    </form>
+    <table id="tb">
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Unit price</th>
+            <th>Discount</th>
+            <th>Subtotal</th>
+        </tr>
+    </table>
+</body>
+</html>

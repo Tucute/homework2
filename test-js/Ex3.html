@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="ex3.js"></script>
+    <link rel="stylesheet" href="ex3.css">
+</head>
+<body>
+    <h1>MENU</h1>
+    <div class="menu">
+        <div class="select">
+            Nước uống:
+            <select id="nuoc">
+                <option value="0">NƯỚC SUỐI</option>
+                <option value="1">COCA COLA</option>
+                <option value="2">7 UP</option>
+                <option value="3">PEPSI</option>
+                <option value="4">CAM ÉP</option>
+                <option value="5">STING</option>
+                <option value="6">BÒ HÚC</option>
+            </select>
+            Số lượng:
+            <input type="number" id="sln">
+        </div>
+        <br>
+        <div>
+            Trái cây: 
+            <select id="tc">
+                <option value="0">Trái cây nhỏ</option>
+                <option value="1">Trái cây lớn</option>
+                <option value="2">Bưởi</option>
+            </select>
+            Số lượng:
+            <input type="number" id="sltc">
+        </div>
+        <br>
+        <div>
+            Tiền: <input type="number" id="tien"> 
+        </div>
+        <br>
+        <div class="btn">
+            <button type="button" onclick="functionOK()">OK</button>
+            <button type="button">Cancle</button>
+        </div>
+        <div class="result">
+            <p id="display"></p>
+            <p id="total"></p>
+            <p><span id="demo"></span></p>
+        </div>
+    </div>
+</body>
+</html>

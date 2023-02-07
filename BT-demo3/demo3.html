@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While do</title>
+    <script>
+        function doWhileloop() {
+            var sum =0;
+            var number = document.getElementById("number").value;
+            var i=1;
+            do {
+                sum = sum + i;
+                i++;
+            } 
+            while (i<=number)
+            document.getElementById("demo").innerHTML=sum;
+        }
+    </script>
+</head>
+<body>
+    Number: 
+    <input type="text" id="number" name="number">
+    <input type="button" onclick="doWhileloop()" value="doWhileloop">
+    <p>
+        <span id="demo"></span>
+    </p>
+</body>
+</html>
